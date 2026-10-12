@@ -227,3 +227,23 @@ footer>a:last-child{color:#b6b4b8}
   .social-links{flex-direction:column;gap:14px}
   .skill-list span{font-size:11px;padding:12px 8px}
 }
+/* Narrow phone fixes */
+@media(max-width:500px){
+  html,body{width:100%;min-width:0;overflow-x:hidden}
+  .hero{width:100%;min-width:0;padding:28px 7vw 30px;min-height:calc(100svh - 66px);overflow:hidden}
+  .hero-meta{display:grid;grid-template-columns:1fr;gap:6px;line-height:1.5;max-width:100%}
+  .hero-meta span{max-width:100%;overflow-wrap:anywhere}
+  h1{font-size:clamp(48px,18vw,82px);line-height:.84;letter-spacing:-.09em;margin:8vh 0 5vh;max-width:100%;overflow-wrap:normal}
+  h1 em{display:block;margin-top:4px}
+  .hero-bottom{display:flex;align-items:stretch;gap:16px;width:100%}
+  .hero-bottom>p{width:100%;max-width:none;font-size:13px;line-height:1.7}
+  .hero-cta-group{width:100%;gap:10px}
+  .hero-pill-btn{justify-content:space-between;width:100%;padding:13px 18px}
+  .hero-index{display:none}
+  .hero-art{width:74vw;height:28vh;min-height:180px;right:-30%;top:52%;opacity:.22;pointer-events:none}
+  .section-heading{flex-direction:column;align-items:flex-start;margin-bottom:32px}
+  .heading-note{width:100%;max-width:none}
+  .webdev-grid,.project-grid{grid-template-columns:minmax(0,1fr)}
+  .webdev-card,.project{min-width:0}
+  .webdev-btn{width:100%}
+}
