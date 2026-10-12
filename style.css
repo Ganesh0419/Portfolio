@@ -207,3 +207,18 @@ footer>a:last-child{color:#b6b4b8}
   .live-project-copy small{font-size:10px}
   .project-visual{min-width:0}
 }
+@media(max-width:500px){
+  .hero{padding:28px 7vw 30px;min-height:calc(100svh - 66px);overflow:hidden}
+  .hero-meta{display:grid;grid-template-columns:1fr;gap:6px;font-size:9px;line-height:1.5;max-width:100%}
+  .hero-meta span{max-width:100%;overflow-wrap:anywhere}
+  .hero-role{margin:8vh 0 -2vh;font-size:9px;letter-spacing:.08em}
+  h1{font-size:clamp(52px,18vw,86px);line-height:.82;letter-spacing:-.09em;margin:8vh 0 5vh;max-width:100%;overflow-wrap:normal}
+  h1 .outline{-webkit-text-stroke:1px #f2f0ec}
+  .hero-bottom{display:flex;align-items:stretch;gap:16px;width:100%}
+  .hero-bottom>p{font-size:13px;line-height:1.7;max-width:none;width:100%}
+  .hero-cta-group{width:100%;gap:10px}
+  .hero-pill-btn{justify-content:space-between;width:100%;padding:13px 18px}
+  .hero-index{display:none}
+  .hero-art{width:76vw;height:30vh;min-height:190px;right:-28%;top:51%;opacity:.28;pointer-events:none}
+  .scroll-note{padding-top:4vh}
+}
