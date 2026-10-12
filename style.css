@@ -69,6 +69,18 @@
 .toolkit-head{display:flex;justify-content:space-between;padding:18px 0;color:var(--muted)}
 .skill-list{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .skill-list span{border:1px solid #343336;padding:15px 13px;font-size:12px;color:#d2d0d2;background:rgba(255,255,255,.02);text-align:center}
+.skill-list span{position:relative;overflow:hidden;transition:color .25s,border-color .25s,transform .25s,background .25s}
+.skill-list span:hover{color:var(--accent);border-color:#65742f;transform:translateY(-3px);background:rgba(213,255,63,.05)}
+.live-project-banner{display:flex;align-items:center;gap:18px;margin-top:18px;padding:18px 20px;border:1px solid #3a4523;background:linear-gradient(100deg,rgba(213,255,63,.12),rgba(255,255,255,.025));transition:transform .25s,border-color .25s,background .25s}
+.live-project-banner:hover{transform:translateY(-3px);border-color:var(--accent);background:linear-gradient(100deg,rgba(213,255,63,.19),rgba(255,255,255,.045))}
+.live-project-mark{display:flex;align-items:center;gap:8px;font:10px "DM Mono",monospace;letter-spacing:.09em;color:var(--accent);white-space:nowrap}
+.live-project-mark i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse-live 1.8s infinite}
+.live-project-copy{display:flex;flex-direction:column;gap:2px;flex:1}
+.live-project-copy strong{font-size:14px}
+.live-project-copy small{font-size:11px;color:var(--muted)}
+.live-project-arrow{font-size:22px;color:var(--accent);transition:transform .25s}
+.live-project-banner:hover .live-project-arrow{transform:translate(3px,-3px)}
+@keyframes pulse-live{50%{opacity:.45;transform:scale(.75)}}
 
 /* Resume Section with Preview & Download */
 .resume-strip{display:flex;justify-content:space-between;align-items:center;gap:40px;background:var(--accent);color:#10110d;border-radius:16px;margin:80px 8vw;padding:50px 60px}
