@@ -247,3 +247,4 @@ footer>a:last-child{color:#b6b4b8}
   .webdev-card,.project{min-width:0}
   .webdev-btn{width:100%}
 }
+.webdev-btn-youtube{background:rgba(255,80,80,.12);border-color:rgba(255,100,100,.35)}.webdev-btn-youtube:hover{background:#ff4b55;color:#fff;border-color:#ff4b55}
